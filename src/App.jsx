@@ -8,12 +8,10 @@ const App = () => {
   const [students, setStudents] = useState([]);
 
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/student-form" element={<StudentForm students={students} setStudents={setStudents} />} />
       </Routes>
-    </Router>
   );
 };
 
